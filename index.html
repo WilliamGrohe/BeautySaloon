@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>petstop.</title>
 
-    <!-- Styles and Fonts -->
+    <!-- Styles, Fonts and Icons -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Fonts/style.css">
 </head>
 <body>
     <header id="header">
-        <nav class="container">
+        <nav class="container ">
             <a class="logo" href="#">pet<span>stop</span>.</a>
-            <div class="menu">...</div>
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#home">Início</a></li>
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#services">Serviços</a></li>
+                    <li><a class="title" href="#testemonials">Depoimentos</a></li>
+                    <li><a class="title" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-cross"></div>
         </nav>
     </header>
     <main>
@@ -26,7 +37,7 @@
                     <img src="./Assets/Images/banhoTosa.jpg" alt="Banho e tosa">
                 </div>
                 <div class="text">
-                    <h1>Bem-vindos à petstop.</h1>
+                    <h2 class="title">Bem-vindos à petstop.</h2>
                     <p>A parada essencial para o seu pet!</p>
                     <a class="button" href="#">Agendar um horário</a>
                 </div>
@@ -36,9 +47,21 @@
         <div class="divider-1">
         </div>
 
-        <section class="section">
-            <div class="container">
-                segunda section
+        <section class="section" id="about">
+            <div class="container grid">
+                Sobre
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <div class="container grid">
+                Services
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container grid">
+                Contato
             </div>
         </section>
 

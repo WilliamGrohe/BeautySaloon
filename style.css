@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 a{
     text-decoration: none;
 }
@@ -39,7 +43,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1 {
+.title {
     color: var(--title-color);
     font: 700 1.85rem 'Poppins', sans-serif;
     -webkit-font-smoothing: auto;
@@ -87,6 +91,7 @@ h1 {
     padding: 5rem 0;
 }
 
+/* ==== MENU / NAVIGATION ================================== */
 #header {
     border-bottom: 1px solid #E4E4E4;
     display: flex;
@@ -99,14 +104,6 @@ h1 {
     background-color: var(--body-color);
 }
 
-nav {
-    height: var(--header-height);
-
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items:  center;
-}
 
 .logo {
     font: 700 1.31rem 'Poppins', sans-serif;
@@ -118,9 +115,88 @@ nav {
 }
 
 main{
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + 2rem);
 }
 
+nav {
+    height: var(--header-height);
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items:  center;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    transition: color 0.2s;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+
+    background: var(--base-color);
+
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+
+    transition: width 0.2s;
+}
+
+nav ul li a:hover {
+    color: var(--base-color);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav .menu {
+    display: none;
+}
+
+nav.show .menu{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: var(--body-color);
+
+}
+
+nav.show ul.grid{
+    gap: 4rem;   
+}
+
+.toggle {
+    color: var(--base-color);
+    font-size: 1.5rem;
+}
+
+nav .icon-cross {
+    display: none;
+}
+
+nav.show .icon-cross {
+    display: flex;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;    
+}
 
 /* ==== HOME ================================== */
 #home {
