@@ -261,7 +261,7 @@ nav.show .icon-cross {
 }
 
 #about .container {
-    margin: var(--header-height) 0;
+    margin: 2rem 0;
 }
 
 #about .image {
@@ -297,22 +297,28 @@ nav.show .icon-cross {
 /* ==== SERVICES ================================== */
 #services .text-black {
     color: var(--title-color);
-
 }
 
 #services .card {
     text-align: center;
     padding: 3.62rem 0;
+    margin-top: 1.5rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
     border-bottom: 4px solid var(--base-color);
     border-radius: 0.5rem 0.5rem 0 0; 
 }
 
-#services .icon-bathtub {
+#services .service-icons {
     font-size: 4.7rem;
     color: var(--base-color);
     margin-bottom: 1.65rem;
 }
+
+/* ==== TESTEMONIALS ================================== */
+#testemonials {
+    background: #FFF;
+}
+
 
 /* ==== FOOTER ================================== */
 footer{
