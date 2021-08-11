@@ -1,126 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>petstop.</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>petstop.</title>
 
-    <!-- Styles, Fonts and Icons -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/Fonts/style.css">
+  <!-- Styles, Fonts and Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Assets/Fonts/style.css">
 </head>
+
 <body>
-    <header id="header">
-        <nav class="container">
-            <a class="logo" href="#">pet<span>stop</span>.</a>
-            <div class="menu">
-                <ul class="grid">
-                    <li><a class="title" href="#home">Início</a></li>
-                    <li><a class="title" href="#about">Sobre</a></li>
-                    <li><a class="title" href="#services">Serviços</a></li>
-                    <li><a class="title" href="#testemonials">Depoimentos</a></li>
-                    <li><a class="title" href="#contact">Contato</a></li>
-                </ul>
-            </div>
-            <div class="toggle icon-menu"></div>
-            <div class="toggle icon-cross"></div>
-        </nav>
-    </header>
-    <main>
-        <section class="section" id="home">
-            <div class="container grid">
-                <div class="image">
-                    <img src="./Assets/Images/banhoTosa.jpg" alt="Banho e tosa">
-                </div>
-                <div class="text">
-                    <h2 class="title">Bem-vindos à petstop.</h2>
-                    <p>A parada essencial para o seu pet!</p>
-                    <a class="button" href="#">Agendar um horário</a>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider-1">
+  <header id="header">
+    <nav class="container">
+      <a class="logo" href="#">pet<span>stop</span>.</a>
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title" href="#about">Sobre</a></li>
+          <li><a class="title" href="#services">Serviços</a></li>
+          <li><a class="title" href="#testemonials">Depoimentos</a></li>
+          <li><a class="title" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-cross"></div>
+    </nav>
+  </header>
+  <main>
+    <section class="section" id="home">
+      <div class="container grid">
+        <div class="image">
+          <img src="./Assets/Images/banhoTosa.jpg" alt="Banho e tosa">
         </div>
-
-        <section class="section" id="about">
-            <div class="container grid">
-                <div class="image">
-                    <img src="./Assets/Images/aboutus.jpg" alt="Homem escovando cachorro - imagem sobre nós">
-                </div>
-                <div class="text">
-                    <h2 class="title">Sobre nós.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est laborum, dolore quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit sit, praesentium obcaecati.</p>
-                    <br />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est laborum, dolore quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit sit, praesentium obcaecati.</p>
-                    <br />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est laborum, dolore quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit sit, praesentium obcaecati.</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider-2">
+        <div class="text">
+          <h2 class="title">Bem-vindos à petstop.</h2>
+          <p>A parada essencial para o seu pet!</p>
+          <a class="button" href="#">Agendar um horário</a>
         </div>
+      </div>
+    </section>
 
-        <section class="section" id="services">
-            <div class="container grid">
-                <div class="text">
-                    <h2 class="title">Serviços</h2>
-                    <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est laborum, dolore quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit sit, praesentium obcaecati.</p>
-                </div>
-                <div class="card">
-                    <div class="service-icons icon-bathtub"></div>
-                    <h2 class="title">Banho</h2>
-                    <p>Para manter seu pet limpinho e cheiroso </p>
-                </div>
-                <div class="card">
-                    <div class="service-icons icon-Trimm"></div>
-                    <h2 class="title">Tosa</h2>
-                    <p>Todos os tipos de tosa para seu pet </p>
-                </div>
-                <div class="card">
-                    <div class="service-icons icon-pet-shop"></div>
-                    <h2 class="title">Produtos e Alimentos</h2>
-                    <p>Contamos com enorme variação de produtos, acessórios, brinquedos, petiscos e alimentos para seus bichanos. </p>
-                </div>
-            </div>
-        </section>
+    <div class="divider-1">
+    </div>
 
-        <div class="divider-1">
+    <section class="section" id="about">
+      <div class="container grid">
+        <div class="image">
+          <img src="./Assets/Images/aboutus.jpg" alt="Homem escovando cachorro - imagem sobre nós">
         </div>
-
-        <section class="section" id="testemonials">
-            <div class="container grid">
-                <div class="text">
-                    <h2 class="title">Depoimentos de quem já passou por aqui</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est laborum, dolore quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit sit, praesentium obcaecati.</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider-2">
+        <div class="text">
+          <h2 class="title">Sobre nós.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est laborum, dolore
+            quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit sit, praesentium
+            obcaecati.</p>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est laborum, dolore
+            quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit sit, praesentium
+            obcaecati.</p>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est laborum, dolore
+            quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit sit, praesentium
+            obcaecati.</p>
         </div>
+      </div>
+    </section>
 
-        <section class="section" id="contact">
-            <div class="container grid">
-                Contato
-            </div>
-        </section>
+    <div class="divider-2">
+    </div>
 
-    </main>
-    <footer>
-        <div class="container grid">
-            <a class="logo" href="#">pet<span class="white">stop</span>.</a>
-            <p>©2021 Petstop.</p>
-            <p>Todos os direitos reservados.</p>
-            <div>Desenvolvido por <a href="https://williamgrohe.github.io/" target="_blank">William Grohe</a>.</div>
+    <section class="section" id="services">
+      <div class="container grid">
+        <div class="text">
+          <h2 class="title">Serviços</h2>
+          <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ipsum est
+            laborum, dolore quae. Laborum rem at minima corrupti iusto nisi, est asperiores quas esse, reprehenderit
+            sit, praesentium obcaecati.</p>
         </div>
-    </footer>
+        <div class="card">
+          <div class="service-icons icon-bathtub"></div>
+          <h2 class="title">Banho</h2>
+          <p>Para manter seu pet limpinho e cheiroso </p>
+        </div>
+        <div class="card">
+          <div class="service-icons icon-Trimm"></div>
+          <h2 class="title">Tosa</h2>
+          <p>Todos os tipos de tosa para seu pet </p>
+        </div>
+        <div class="card">
+          <div class="service-icons icon-pet-shop"></div>
+          <h2 class="title">Produtos e Alimentos</h2>
+          <p>Contamos com enorme variação de produtos, acessórios, brinquedos, petiscos e alimentos para seus bichanos.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <script src="main.js"></script>
+    <div class="divider-1">
+    </div>
+
+    <section class="section" id="testemonials">
+      <div class="container">
+        <header>
+          <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+        </header>
+
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laboriosam corrupti ducimus doloribus
+                  ut
+                  aut repellat, laborum dolor eligendi, odio ipsa quas nemo mollitia sunt? Asperiores earum ex nesciunt
+                  quibusdam!
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="Foto de Wanessa Souza">
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laboriosam corrupti ducimus doloribus
+                  ut
+                  aut repellat, laborum dolor eligendi, odio ipsa quas nemo mollitia sunt? Asperiores earum ex nesciunt
+                  quibusdam!
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/94.jpg" alt="Foto de Franciele Silva">
+                  Franciele Silva
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laboriosam corrupti ducimus doloribus
+                  ut
+                  aut repellat, laborum dolor eligendi, odio ipsa quas nemo mollitia sunt? Asperiores earum ex nesciunt
+                  quibusdam!
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Foto de Marcelo Pirolzan">
+                  Marcelo Pirolzan
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+ 
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2">
+    </div>
+
+    <section class="section" id="contact">
+      <div class="container grid">
+        Contato
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="container grid">
+      <a class="logo" href="#">pet<span class="white">stop</span>.</a>
+      <p>©2021 Petstop.</p>
+      <p>Todos os direitos reservados.</p>
+      <div>Desenvolvido por <a href="https://williamgrohe.github.io/" target="_blank">William Grohe</a>.</div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
-</html>
+
+</html>"
