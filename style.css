@@ -399,7 +399,6 @@ nav.show .icon-cross {
 
 footer {
   background: var(--base-color);
-  height: 18rem;
 }
 
 footer .container {
@@ -409,9 +408,24 @@ footer .container {
   color: var(--text-color-light);
 }
 
-footer .container div {
+footer .logo {
+  margin-bottom: 1.5rem;
+}
+
+footer .socialMedia {
+  display:flex; 
+}
+
+footer .socialMedia .service-icon {
+  margin-top: 1rem;
+  margin-right: 2rem;
+
+  font-size: 1.5rem;
+}
+
+footer .container .developed {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 footer span.white {
