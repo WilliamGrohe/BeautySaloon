@@ -372,6 +372,28 @@ nav.show .icon-cross {
   background: var(--base-color);
 }
 
+/* ==== CONTACT ================================== */
+#contact .whatsappButton a {
+  font: 500 1rem 'DM Sans', sans-serif;
+}
+
+#contact .whatsappButton .icon-whatsapp {
+  margin-right: 0.85rem;
+  font-size: 1.25rem;
+}
+
+#contact .infoContact div {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#contact .infoContact .service-icons {
+  font-size: 1.5rem;
+  color: var(--base-color);
+  margin-right: 0.85rem;
+}
+
 
 /* ==== FOOTER ================================== */
 
