@@ -27,3 +27,32 @@ const swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
     },
   });
+
+/* scrollreveal: animação ao rolar a página */
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,
+    reset: true,
+})
+
+scrollReveal.reveal(
+    `#home .image, #home .text,
+    #about .image, #abut .text,
+    #services .text, #services .card,
+    #testemonials header, #testemonials .testimonials,
+    #contact .text, #contact .whatsappButton, #contact .infoContact
+    `,
+    {interval: 100}
+)
+
+/* back-to-top voltar para o inicio */
+const backToTopButton = document.querySelector(".back-to-top")
+
+window.addEventListener('scroll', function() {
+    if(window.scrollY >= 560){
+        backToTopButton.classList.add('show')
+    } else {
+        backToTopButton.classList.remove('show')
+    }
+})
