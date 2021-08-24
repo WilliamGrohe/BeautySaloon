@@ -36,21 +36,24 @@ const scrollReveal = ScrollReveal({
     reset: true,
 })
 
-scrollReveal.reveal(
-    `#home .image, #home .text,
-    #about .image, #abut .text,
-    #services .text, #services .card,
-    #testemonials header, #testemonials .testimonials,
-    #contact .text, #contact .whatsappButton, #contact .infoContact
-    `,
-    {interval: 100}
-)
+if(window.screen.width < 610){
+    scrollReveal.reveal(
+        `#home .image, #home .text,
+        #about .image, #abut .text,
+        #services .text, #services .card,
+        #testemonials header, #testemonials .testimonials,
+        #contact .text, #contact .whatsappButton, #contact .infoContact
+        `,
+        {interval: 100}
+    )
+}
+
 
 /* back-to-top voltar para o inicio */
 const backToTopButton = document.querySelector(".back-to-top")
 
 window.addEventListener('scroll', function() {
-    if(window.scrollY >= 560){
+    if(window.scrollY >= 560 && window.screen.availWidth < 610){
         backToTopButton.classList.add('show')
     } else {
         backToTopButton.classList.remove('show')

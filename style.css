@@ -33,6 +33,7 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --title-font-size: 1.85rem;
 }
 
 /* ==== BASE ================================== */
@@ -47,7 +48,7 @@ body {
 
 .title {
   color: var(--title-color);
-  font: 700 1.85rem 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) 'Poppins', sans-serif;
   margin-bottom: 1rem;
   -webkit-font-smoothing: auto;
 }
@@ -309,6 +310,11 @@ nav.show .icon-cross {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+#services .card p {
+ margin:0 10px;
+ width:fit-content;
+}
+
 #services .service-icons {
   font-size: 4.7rem;
   color: var(--base-color);
@@ -456,4 +462,58 @@ footer span.white {
   opacity: 1;
 
   bottom: 1rem;
+}
+
+/* ==== MEDIA QUERY: RESPONSIVIDADE WEB ========================== */
+
+@media screen and (min-width: 610px) {
+  :root{
+    --title-font-size: 2.25rem;
+  }
+
+  .grid {
+    display: flex;
+  }
+  
+  /* NAVBAR */
+  nav .menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  nav .menu ul,
+  nav .menu ul .title {
+    display: flex;
+    font: 400 1rem 'DM Sans', sans-serif;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  /* HOME */
+  #home .container {
+    flex-direction: row-reverse;
+  }
+
+  #home .container .text {
+    justify-content: center;
+    align-items: center;
+  }
+  /* ABOUT */
+  #about .image {
+    width: 100%;
+  }
+
+  /* SERVICES */
+  #services .container {
+    flex-wrap: wrap;
+  }
+
+  #services .card {
+    max-width: 352px;
+  }
+  
+  /* SERVICES */
+  
 }
