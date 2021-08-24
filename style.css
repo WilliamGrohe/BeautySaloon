@@ -301,6 +301,9 @@ nav.show .icon-cross {
   color: var(--title-color);
 }
 
+#services .cards {
+}
+
 #services .card {
   text-align: center;
   padding: 3.62rem 0;
@@ -310,9 +313,12 @@ nav.show .icon-cross {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+#services .cards .title {
+  font-size: 1.5rem;
+}
+
 #services .card p {
  margin:0 10px;
- width:fit-content;
 }
 
 #services .service-icons {
@@ -497,8 +503,7 @@ footer span.white {
   }
 
   #home .container .text {
-    justify-content: center;
-    align-items: center;
+    text-align: left;
   }
   /* ABOUT */
   #about .image {
@@ -507,11 +512,24 @@ footer span.white {
 
   /* SERVICES */
   #services .container {
-    flex-wrap: wrap;
+    display: grid;
+  }
+
+  #services .text {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #services .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   #services .card {
-    max-width: 352px;
   }
   
   /* SERVICES */
