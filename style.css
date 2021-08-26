@@ -505,10 +505,45 @@ footer span.white {
     margin-right: auto;
   }
 
+  header .container{
+    margin: 0 2rem;
+  }
+
+  /* ABOUT */
+  #about .image {
+    width: 100%;
+  }
+
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
+
+
+  /* TESTIMONIALS */
+  #testemonials .container {
+    max-width: 62rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testemonials header {
+    text-align: center;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 767px) {
   /* NAVBAR */
   nav .menu {
     visibility: visible;
     opacity: 1;
+  }
+
+  nav .menu a {
+    margin-bottom: -5px;
   }
   
   nav .menu ul,
@@ -540,33 +575,6 @@ footer span.white {
     text-align: left;
   }
 
-  /* ABOUT */
-  #about .image {
-    width: 100%;
-  }
-
-  #about .container {
-    grid-auto-flow: column;
-    margin: 0 auto;
-  }
-
-
-  /* TESTIMONIALS */
-  #testemonials .container {
-    max-width: 62rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #testemonials header {
-    text-align: center;
-    max-width: 32rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 767px) {
   /* SERVICES */
   #services .text {
     text-align: center;
