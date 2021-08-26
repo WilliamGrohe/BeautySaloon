@@ -21,11 +21,17 @@ for (let link of menu){
 /* Testimonials caroussel slider swiper */
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
-    mousewheel: true,
-    keyboard: true,
     pagination: {
       el: '.swiper-pagination',
     },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            setWrapperSize: true
+        }
+    }
   });
 
 /* scrollreveal: animação ao rolar a página */

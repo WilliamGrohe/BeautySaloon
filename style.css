@@ -94,6 +94,10 @@ body {
   padding: 5rem 0;
 }
 
+.section header {
+  margin-bottom: 4rem;
+}
+
 /* ==== MENU / NAVIGATION ================================== */
 
 #header {
@@ -272,7 +276,7 @@ nav.show .icon-cross {
 #about .image::before {
   content: '';
   width: 100%;
-  height: 100%;
+  height: 90%;
   background-color: var(--base-color-second);
   position: absolute;
   top: -8.3%;
@@ -301,8 +305,6 @@ nav.show .icon-cross {
   color: var(--title-color);
 }
 
-#services .cards {
-}
 
 #services .card {
   text-align: center;
@@ -333,7 +335,15 @@ nav.show .icon-cross {
   background: #FFF;
 }
 
+#testemonials .container {
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: hidden;
+}
+
 #testemonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-bottom: 0;
 }
 
@@ -358,7 +368,7 @@ nav.show .icon-cross {
   color: var(--base-color);
 }
 
-#testemonials blockquote cite {
+#testemonials cite {
   display: flex;
   align-items: center;
 }
@@ -375,6 +385,10 @@ nav.show .icon-cross {
   padding: 4rem 1rem;
 }
 
+.swiper-pagination {
+  position: unset;
+}
+
 .swiper-pagination-bullet{
   width: 0.75rem;
   height: 0.75rem;
@@ -385,11 +399,16 @@ nav.show .icon-cross {
 }
 
 /* ==== CONTACT ================================== */
-#contact .whatsappButton a {
-  font: 500 1rem 'DM Sans', sans-serif;
+#contact header{
+  margin: 0;
 }
 
-#contact .whatsappButton .icon-whatsapp {
+#contact .text a {
+  font: 500 1rem 'DM Sans', sans-serif;
+  margin: 2rem 0;
+}
+
+#contact .icon-whatsapp {
   margin-right: 0.85rem;
   font-size: 1.25rem;
 }
@@ -420,8 +439,12 @@ footer .container {
   color: var(--text-color-light);
 }
 
+footer .brand .copyright {
+  margin-top: 1.2rem;
+}
+
 footer .logo {
-  margin-bottom: 1.5rem;
+  font-size: 2.3rem;
 }
 
 footer .socialMedia {
@@ -471,16 +494,17 @@ footer span.white {
 }
 
 /* ==== MEDIA QUERY: RESPONSIVIDADE WEB ========================== */
-
-@media screen and (min-width: 610px) {
+@media (min-width: 992px) {
   :root{
     --title-font-size: 2.25rem;
   }
 
-  .grid {
-    display: flex;
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+
   /* NAVBAR */
   nav .menu {
     visibility: visible;
@@ -499,39 +523,98 @@ footer span.white {
 
   /* HOME */
   #home .container {
-    flex-direction: row-reverse;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
   }
 
   #home .container .text {
     text-align: left;
   }
+
   /* ABOUT */
   #about .image {
     width: 100%;
   }
 
-  /* SERVICES */
-  #services .container {
-    display: grid;
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
   }
 
+
+  /* TESTIMONIALS */
+  #testemonials .container {
+    max-width: 62rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testemonials header {
+    text-align: center;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 767px) {
+  /* SERVICES */
   #services .text {
     text-align: center;
-    width: 600px;
-    margin: 0 auto;
+    width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #services .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    max-width: 1000px;
+    max-width: 62rem;
     margin: 0 auto;
   }
 
-  #services .card {
+  /* CANTACT */
+  #contact .container {
+    grid-auto-flow: column;
+    padding-left: 2rem;
   }
-  
-  /* SERVICES */
-  
+
+  #contact header {
+    max-width: 26rem;
+  }
+
+  #contact .infoContact{
+    margin-top: 2rem;
+  } 
+
+  /* FOOTER */
+  footer .container{
+    padding-left: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "brand socialMedia"
+    "developed developed";
+  }
+
+  footer .brand {
+    grid-area: brand;
+  }
+
+  footer .socialMedia{
+    justify-content: flex-end;
+    grid-area: socialMedia;
+  }
+
+  footer .developed {
+    grid-area: developed;
+  }
 }
