@@ -537,6 +537,10 @@ footer span.white {
 
 @media (min-width: 767px) {
   /* NAVBAR */
+  header {
+    justify-content: center;
+  }
+
   nav .menu {
     visibility: visible;
     opacity: 1;
